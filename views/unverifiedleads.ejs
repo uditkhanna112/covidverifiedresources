@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+</head>
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/main1.css">
+
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<body>
+ 
+<div class="hh">
+ <h4>
+  Submit the lead
+ </h4>
+</div>
+<form method="POST" action="/display">
+  <div class="form-group">
+    <label for="last_name">Name</label>
+    
+    <input id="last_name" name="name" type="text" REQUIRED>
+  </div>
+
+  <div class="form-group">
+    <label for="Source">Source</label>
+    
+    <input id="Source" name="Source" type="text" REQUIRED>
+  </div>
+
+  <div class="form-group">
+    <label for="Contact">Contact</label>
+    <input id="Contact" name="Contact" type="text" REQUIRED>
+  </div>
+
+  <div class="form-group">
+    <label for="City">City</label>
+    <input id="City" name="City" type="text" REQUIRED>
+  </div>
+
+  <div class="form-group">
+    <label for="address">Address</label>
+    <input id="address" name="address" type="text" REQUIRED>
+  </div>
+
+  <div class="form-group">
+    <label for="DateVerify">Verified On</label>
+    <input id="DateVerify" name="DateVerify" type="date" REQUIRED>
+  </div>
+
+  <div class="form-group">
+    <label for="Leads">Select Lead</label>
+      <select class="form-control" id="Leads" name="Leads">
+        <option value="Oxygen">Oxygen</option>
+        <option value="ICU Bed With Ventilator">ICU Bed With Ventilator</option>
+        <option value="ICU Bed Without Ventilator">ICU Bed Without Ventilator</option>
+        <option value="Remdesivir">Remdesivir</option>
+        <option value="FabiFlu">FabiFlu</option>
+        <option value="Plasma">Plasma</option>
+        <option value="Food Servies">Food Servies</option>
+        <option value="Ambulance">Ambulance</option>
+        <option value="Tocilizumab">Tocilizumab</option>
+      </select>
+  </div>
+  <button class="btn btn-primary" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+</form>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Recovered Patients</title>
+</head>
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/main1.css">
+
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<body>
+ 
+<div class="hh">
+ <h2 style="text-align: center; color: azure;"> 
+  Submit the lead
+ </h2>
+</div>
+<form style="margin-left:30%" method="POST" action="/displayPlasma">
+  <div class="container">
+  <div class="row">
+      <div class="col-md-2">
+    <label for="last_name">Donor Name</label>
+      </div>
+  <div class="col-md-6">
+    <input id="last_name" name="name" type="text" REQUIRED>
+</div>
+</div>
+</div>
+
+<br><div class="container">
+  <div class="row">
+      <div class="col-md-2">
+    <label for="Contact">Donor Contact</label>
+  </div>
+  <div class="col-md-6">
+    <input id="Contact" name="Contact" type="text" REQUIRED>
+  </div>
+</div>
+</div>
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+      <label for="Age">Donor Age</label>
+    </div>
+    <div class="col-md-6">
+      <input id="Age" name="Age" type="number" min="10" max="95" REQUIRED>
+    </div>
+    </div>
+    </div>
+
+    <br>    
+<div class="container">
+  <div class="row">
+      <div class="col-md-2">
+    <label for="City">City(Donor)</label>
+  </div>
+  <div class="col-md-6">
+    <input id="City" name="City" type="text" REQUIRED>
+  </div>
+  </div>
+  </div>
+
+  <br>
+<div class="container">
+  <div class="row">
+      <div class="col-md-2">
+    <label for="address">Address(Donor)</label>
+  </div>
+  <div class="col-md-6">
+    <input id="address" name="address" type="text" REQUIRED>
+  </div>
+  </div>
+  </div>
+
+
+
+  <br>
+<div class="container">
+  <div class="row">
+      <div class="col-md-2">
+    <label for="DateVerify">Negative Date</label>
+  </div>
+  <div class="col-md-6">
+    <input id="NegativeVerify" name="NegativeVerify" type='date' data-date-format="DD MMMM YYYY"  REQUIRED>
+  </div>
+</div></div>
+
+<br>
+<button style="width: 50%;" class="btn btn-light" type="submit" name="action">Submit
+</button>
+<br><br>
+<a style="width: 50%;" class="btn btn-success" href="/about" name="action">Home
+</a>
+</form>
+
+
+</body>
+</html>

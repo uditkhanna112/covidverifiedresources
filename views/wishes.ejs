@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Submit Lead</title>
+</head>
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/main1.css">
+
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<body>
+ 
+<div class="hh">
+  <h2 style="color: azure;text-align: center;"> 
+  Submit the lead
+ </h2>
+</div>
+
+<form style="margin-left:30%" method="POST" action="/display">
+  <div class="container">
+  <div class="row">
+      <div class="col-md-2">
+    <label for="last_name">Name</label>
+      </div>
+  <div class="col-md-6">
+    <input id="last_name" name="name" type="text" REQUIRED>
+</div>
+</div>
+</div>
+
+
+<br>
+<div class="container">
+  <div class="row">
+      <div class="col-md-2">
+    <label for="Source">Source</label>
+  </div>
+  <div class="col-md-6">
+    <input id="Source" name="Source" type="text" REQUIRED>
+  </div>
+  </div>
+  </div>
+
+  <br>
+<div class="container">
+  <div class="row">
+      <div class="col-md-2">
+    <label for="Contact">Contact</label>
+  </div>
+  <div class="col-md-6">
+    <input id="Contact" name="Contact" type="text" REQUIRED>
+  </div>
+</div>
+</div>
+
+<br>
+<div class="container">
+  <div class="row">
+      <div class="col-md-2">
+    <label for="City">City</label>
+  </div>
+  <div class="col-md-6">
+    <input id="City" name="City" type="text" REQUIRED>
+  </div>
+  </div>
+  </div>
+
+  <br>
+<div class="container">
+  <div class="row">
+      <div class="col-md-2">
+    <label for="address">Address</label>
+  </div>
+  <div class="col-md-6">
+    <input id="address" name="address" type="text" REQUIRED>
+  </div>
+  </div>
+  </div>
+
+  <br>
+<div class="container">
+  <div class="row">
+      <div class="col-md-2">
+  <label>Verified&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </label>
+</div>
+<div class="col-md-6">
+  <input type="radio" id="verified" name="verifyStatus" value="true">
+  <label for="verified">Yes</label>
+  <input type="radio" id="unverified" name="verifyStatus" value="false">
+  <label for="unverified">No</label><br>
+</div>
+</div>
+</div>
+
+<br>
+<div class="container">
+  <div class="row">
+      <div class="col-md-2">
+    <label for="Dateverify">Lead Date</label>
+  </div>
+  <div class="col-md-6">
+    <input id="Dateverify" name="Dateverify" type='date' data-date-format="DD MMMM YYYY"  REQUIRED>
+  </div>
+
+  <br><br>
+<div class="container">
+  <div class="row">
+      <div class="col-md-2">
+    <label for="Leads">Select Lead</label>
+  </div>
+  <div class="col-md-6">  
+    <select style="width: 40%;" class="form-control" id="Leads" name="Leads">
+        <option value="Oxygen">Oxygen</option>
+        <option value="ICU Bed With Ventilator">ICU Bed With Ventilator</option>
+        <option value="ICU Bed Without Ventilator">ICU Bed Without Ventilator</option>
+        <option value="Remdesivir">Remdesivir</option>
+        <option value="FabiFlu">FabiFlu</option>
+        <option value="Plasma">Plasma</option>
+        <option value="Food Servies">Food Servies</option>
+        <option value="Ambulance">Ambulance</option>
+        <option value="Tocilizumab">Tocilizumab</option>
+      </select>
+  </div>
+  </div>
+  </div>
+  <br><br>
+  
+  <button style="width: 50%;" class="btn btn-light" type="submit" name="action">Submit
+  </button>
+  
+</form>
+
+</body>
+</html>
