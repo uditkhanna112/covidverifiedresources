@@ -49,7 +49,7 @@ app.get("/wishes2",function(req,res){
   res.render("wishes2.ejs");  
   
 });
-app.get("/about",function(req,res){
+app.get("/",function(req,res){
   res.render("home.ejs");
 });
 app.get("/wishes",function(req,res){
